@@ -116,3 +116,46 @@ footer {
     width: 20px;
     height: 30%;
 }
+
+@media screen and (max-width: 768px) {
+    .introduction {
+        margin: 50% 0 0 0;
+    }
+    
+    .me-container {
+        width: 80%;
+        margin: 3% 10%;
+    }
+    
+    .about {
+        display: block;
+    }
+    
+    .about div {
+        flex: 100%;
+    }
+    
+    .about p {
+        margin: 5% 1%;
+    }
+    
+    .projects {
+        width: 80%;
+        margin: auto;
+        padding: 20% 0;
+    }
+    
+    .services {
+        width: 80%;
+        margin: auto;
+        padding: 20% 0;
+    }
+    
+    .contact {
+        width: 80%;
+        margin: auto;
+        padding: 20% 0;
+    }
+}
+    
+}
