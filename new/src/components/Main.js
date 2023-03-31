@@ -2,8 +2,17 @@ import React from "react";
 
 export default function Navbar() {
     return (
-    <div>
-      <h1>Main Component</h1>
-    </div>
+    <body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    </body>
   );
 }
