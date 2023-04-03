@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
     return (
     <header>
-        <h3>Ameer</h3>
+        <h1>Ameer</h1>
         <ul>
             <li>About</li>
             <li>Tech Stack</li>
