@@ -6,6 +6,7 @@ import TechStack from "./TechStack";
 import Socials from "./Socials";
 import CurrentFocus from "./CurrentFocus";
 import Projects from "./Projects";
+import WorkExperience from "./WorkExperience";
 
 const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
@@ -125,7 +126,9 @@ like Code-build, Code-pipeline, EKS,  IAM, and CloudFormation.
     <section>
         <Projects />
     </section>
-    <section></section>
+    <section>
+        <WorkExperience />
+    </section>
     </body>
   );
 }
