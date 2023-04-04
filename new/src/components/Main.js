@@ -3,6 +3,9 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImportImages from "./ImportImages";
 import TechStack from "./TechStack";
+import Socials from "./Socials";
+import CurrentFocus from "./CurrentFocus";
+import Projects from "./Projects";
 
 const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
@@ -20,17 +23,7 @@ export default function Main() {
     return (
     <body>
     <section>
-        <div>
-          <ul>
-            <li><FontAwesomeIcon icon="fa-brands fa-linkedin" /></li>
-            <li><FontAwesomeIcon icon="fa-brands fa-github" /></li>
-            <li><FontAwesomeIcon icon="fa-regular fa-envelope" /></li>
-            <li><FontAwesomeIcon icon="fa-brands fa-codepen" /></li>
-            <li><FontAwesomeIcon icon="fa-brands fa-twitter" /></li>
-            <li><FontAwesomeIcon icon="fa-brands fa-facebook" /></li>
-            <li><FontAwesomeIcon icon="fa-brands fa-instagram" /></li>
-          </ul>
-        </div>
+        <Socials />
         <div>
             <h3>
                 Hi my name is Ameer Ogirimah
@@ -126,8 +119,12 @@ like Code-build, Code-pipeline, EKS,  IAM, and CloudFormation.
     <section>
         <TechStack />
     </section>
-    <section></section>
-    <section></section>
+    <section>
+        <CurrentFocus />
+    </section>
+    <section>
+        <Projects />
+    </section>
     <section></section>
     </body>
   );
