@@ -1,6 +1,5 @@
 import React from "react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImportImages from "./ImportImages";
 import TechStack from "./TechStack";
 import Socials from "./Socials";

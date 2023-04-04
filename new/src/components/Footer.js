@@ -1,5 +1,4 @@
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Socials from "./Socials";
 
 export default function Footer() {
