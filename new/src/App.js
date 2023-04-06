@@ -17,10 +17,10 @@ export const ThemeContext = createContext(null);
 
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme((current) => (current === 'dark' ? 'light' : 'dark'));
   };
 
   return (
