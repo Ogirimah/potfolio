@@ -3,7 +3,7 @@ import Socials from "./Socials";
 
 export default function Footer() {
     return (
-    <div>
+    <div id='contact'>
       <h3>Contacts</h3>
         <div>
             <div>

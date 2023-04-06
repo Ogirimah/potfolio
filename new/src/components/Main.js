@@ -88,7 +88,7 @@ export default function Main() {
                 </p>
             </div>
         </div>
-        <div>
+        <div id='about'>
             <h3>
                 About me
             </h3>
@@ -116,16 +116,16 @@ like Code-build, Code-pipeline, EKS,  IAM, and CloudFormation.
             </div>
         </div>
     </section>
-    <section>
+    <section id='techStack'>
         <TechStack />
     </section>
-    <section>
+    <section id='currentFocus'>
         <CurrentFocus />
     </section>
-    <section>
+    <section id='projects'>
         <Projects />
     </section>
-    <section>
+    <section id='workExperience'>
         <WorkExperience />
     </section>
     </body>
