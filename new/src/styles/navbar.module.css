@@ -1,0 +1,52 @@
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+.heading h1 {
+    padding: 5% 5%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /*flex: 40%;*/
+    text-align: right;
+
+    color: #88F2BF;
+}
+
+.list {
+    list-style: none;
+    Padding: 5% 5%;
+    display: flex;
+    font-style: normal;
+    font-size: 14px;
+    /*flex: 60%;*/
+}
+
+.list li {
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 21px;
+}
+
+
+.light {
+    color: white;
+    background: black;
+}
+
+.dark {
+    color: black;
+    background: white;
+}
+
+/*@media (theme) {*/
+/*    :root {*/
+/*        color-scheme: light dark;*/
+/*    }*/
+
+/*}*/
