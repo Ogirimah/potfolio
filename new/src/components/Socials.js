@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../styles/socials.module.css";
 
 export default function Socials({ horizontal, space }) {
     // This function returns the links to my social media
@@ -9,7 +10,7 @@ export default function Socials({ horizontal, space }) {
 
     return (
         <div>
-          <ul>
+          <ul className={ styles.items }>
             <li><FontAwesomeIcon icon="fa-brands fa-linkedin" /></li>
             <li><FontAwesomeIcon icon="fa-brands fa-github" /></li>
             <li><FontAwesomeIcon icon="fa-regular fa-envelope" /></li>

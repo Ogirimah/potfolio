@@ -6,6 +6,7 @@ import Socials from "./Socials";
 import CurrentFocus from "./CurrentFocus";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
+import styles from "../styles/main.module.css";
 
 const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
@@ -21,10 +22,10 @@ export default function Main() {
     // 5. A section that contains my contact details.
     // 6. A section that contains my social media links.
     return (
-    <body>
-    <section>
+    <body className={ styles.container }>
+    <section className={ styles.section }>
         <Socials />
-        <div>
+        <div className={ styles.introContainer }>
             <h3>
                 Hi my name is Ameer Ogirimah
             </h3>
@@ -32,7 +33,7 @@ export default function Main() {
                 A software Engineer
             </h2>
             <p>
-                I am an highly motivated person and I enjoy challenges on new
+                I am a highly motivated person and I enjoy challenges on new
                 and existing roles. I am confident on my
                 flexibility in meeting up with the needs of any organization.
             </p>
@@ -40,7 +41,7 @@ export default function Main() {
                 <button>Download CV</button>
             </a>
         </div>
-        <div>
+        <div className={ styles.imageContainer }>
             <div>
                 <img src={images['ameer.png']} alt="Ameer Ogirimah" />
             </div>
