@@ -26,9 +26,11 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
     <div className="App" id={theme}>
-      <Navbar />
-      <Main />
-      <Footer />
+        <div className="background">
+            <Navbar />
+            <Main />
+            <Footer />
+        </div>
     </div>
     </ThemeContext.Provider>
   );
