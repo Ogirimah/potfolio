@@ -30,8 +30,9 @@
     color: #88F2BF;
 }
 
-.h1:link {
+.heading h1 a {
     color: #88F2BF;
+    text-decoration: none;
 }
 .h1:visited {
     color: #88F2BF;
@@ -52,6 +53,11 @@
     flex-direction: column;
     line-height: 21px;
     font-size: 14px;
+}
+
+.list li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .switch {
