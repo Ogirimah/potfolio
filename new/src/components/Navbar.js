@@ -11,6 +11,7 @@ export default function Navbar() {
         toggleTheme 
     } = useContext(ThemeContext);
     return (
+    <div className={styles.container} id={theme}>
     <header className={styles.heading} id={theme}>
         <h1>
         <a href='https://ogirimah.com'>Ameer</a>
@@ -37,5 +38,6 @@ export default function Navbar() {
             <li><a href='#contact'>Contact</a></li>
         </ul>
     </header>
+    </div>
   );
 }
