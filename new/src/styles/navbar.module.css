@@ -17,16 +17,14 @@
     justify-content: space-between;
 }
 .heading h1 {
-    padding: 4% 5%;
-
+    padding: 4% 0 0 0;
+    text-align: left;
     font-family: 'Poppins', 'sans-serif';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
     flex: 20%;
-    text-align: right;
-
     color: #88F2BF;
 }
 
