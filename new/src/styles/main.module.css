@@ -17,3 +17,36 @@
 .imageContainer {
     flex: 40%;
 }
+
+.hi {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.softwareEngineer {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+
+    background: linear-gradient(259.17deg, #04ADF5 1.33%, #FEE505 94.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.brief {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.button {
+    background: linear-gradient(180deg, #A0F4F5 0%, #DBD663 171.59%);
+    border-radius: 8px;
+    width: 132px;
+    height: 31px;
+    font-size: 10px;
+    line-height: 15px;
+}

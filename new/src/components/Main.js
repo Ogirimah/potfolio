@@ -1,6 +1,7 @@
 import React from "react";
 
 import ImportImages from "./ImportImages";
+import About from "./About";
 import TechStack from "./TechStack";
 import Socials from "./Socials";
 import CurrentFocus from "./CurrentFocus";
@@ -26,19 +27,19 @@ export default function Main() {
     <section className={ styles.section }>
         <Socials />
         <div className={ styles.introContainer }>
-            <h3>
+            <h3 className={ styles.hi }>
                 Hi my name is Ameer Ogirimah
             </h3>
-            <h2>
+            <h2 className={ styles.softwareEngineer }>
                 A software Engineer
             </h2>
-            <p>
+            <p className={ styles.brief }>
                 I am a highly motivated person and I enjoy challenges on new
                 and existing roles. I am confident on my
                 flexibility in meeting up with the needs of any organization.
             </p>
             <a href="/docs/Ameer-Ogirimah.pdf" target="_blank" rel="noopener noreferrer">
-                <button>Download CV</button>
+                <button className={ styles.button }>Download CV</button>
             </a>
         </div>
         <div className={ styles.imageContainer }>
@@ -54,68 +55,7 @@ export default function Main() {
         </div>
     </section>
     <section>
-        <div>
-            <div>
-                <h5>
-                Front-end Engineer
-                </h5>
-                <p>
-                    I develop front-end applications using ReactJS, HTML, CSS, Jinja2 and JavaScript
-                </p>
-                <p>
-                    <a href="" target="_blank" rel="noopener noreferrer">View Projects</a>
-                </p>
-            </div>
-            <div>
-                <h5>
-                Back-end Engineer
-                </h5>
-                <p>
-                    I develop backend-end applications using Django, Flask, Python and PostgreSQL
-                </p>
-                <p>
-                    <a href="" target="_blank" rel="noopener noreferrer">View Projects</a>
-                </p>
-            </div>
-            <div>
-                <h5>
-                Deployment
-                </h5>
-                <p>
-                    I develop software solutions using AWS, Heroku, Docker and Kubernetes
-                </p>
-                <p>
-                    <a href="" target="_blank" rel="noopener noreferrer">View Projects</a>
-                </p>
-            </div>
-        </div>
-        <div id='about'>
-            <h3>
-                About me
-            </h3>
-            <p>
-                I am proficient with python frameworks like Django and Flask for back-end web development, HTML, CSS, JavaScript for Front-end, and PostgreSQL for database management.</p>
-            <p>
-                As a creative thinker adept in software development and working with various data
-structures and schemas, I can effectively manage independent projects and collaborate
-as part of productive team. I am currently researching AI and how to use it to build more
-accessible web apps.
-            </p>
-            <p>
-                I have experience in continuous deploying and managing web apps, using AWS services
-like Code-build, Code-pipeline, EKS,  IAM, and CloudFormation.
-            </p>
-            <div>
-                <div>
-                    <p>10+</p>
-                    <p>Projects completed</p>
-                </div>
-                <div>
-                    <p>5+</p>
-                    <p>Happy clients</p>
-                </div>
-            </div>
-        </div>
+        < About />
     </section>
     <section id='techStack'>
         <TechStack />
