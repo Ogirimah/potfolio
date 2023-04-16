@@ -1,6 +1,7 @@
 import React from "react";
 import ImportImages from "./ImportImages";
 import OneFocus from "./OneFocus";
+import styles from "../styles/currentFocus.module.css";
 
 const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 export default function CurrentFocus() {
@@ -11,8 +12,8 @@ export default function CurrentFocus() {
     // @link: The link to the activity
     return (
         <div>
-            <h3>Current Focus</h3>
-            <div>
+            <h3 className={ styles.heading }>Current Focus</h3>
+            <div className={ styles.container }>
                 <OneFocus
                     image={images['AI.jpg']}
                     description='Ai powered web solutions using Keras, TensorFlow, and ML.NET '

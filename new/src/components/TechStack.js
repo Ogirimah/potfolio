@@ -1,5 +1,6 @@
 import React from "react";
 import ImportImages from "./ImportImages";
+import styles from "../styles/techStack.module.css";
 
 const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 export default function TechStack() {
@@ -7,7 +8,7 @@ export default function TechStack() {
     return (
         <div>
             <h3>Tech Stack</h3>
-            <div>
+            <div className={ styles.container }>
                 <a href="https://react.dev" rel="noreferrer noopener">
                     <img src={images['react.png']} alt="React" title="React" />
                 </a>
