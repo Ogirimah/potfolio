@@ -44,6 +44,12 @@ export default function TechStack() {
                 <a href="https://www.vim.org" rel="noreferrer noopener">
                     <img src={images['vim.png']} alt="Vim" title="Vim" />
                 </a>
+                <a href="https://www.tensorflow.org" rel="noreferrer noopener">
+                    <img src={images['tensorflow.png']} alt="Tensorflow" title="Tensorflow" />
+                </a>
+                <a href="https://ffmpeg.org/ffmpeg.html" rel="noreferrer noopener">
+                    <img src={images['ffmpeg.png']} alt="FFmpeg" title="FFmpeg" />
+                </a>
             </div>
         </div>
     );
