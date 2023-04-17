@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.container p {
+    font-weight: 400;
+}
+
+.container div h5 {
+    font-weight: 700;
+}
+
+.breakdown {
+    flex: 45%;
+}
+
+.details {
+    flex: 55%;
+}

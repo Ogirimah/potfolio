@@ -1,0 +1,64 @@
+.container {
+
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 116px;
+    background-color: #000;
+    z-index: 100;
+}
+
+.heading {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.heading h1 {
+    padding: 4% 0 0 0;
+    text-align: left;
+    font-family: 'Poppins', 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    flex: 20%;
+    color: #88F2BF;
+}
+
+.heading h1 a {
+    color: #88F2BF;
+    text-decoration: none;
+}
+.h1:visited {
+    color: #88F2BF;
+}
+
+.list {
+    list-style: none;
+    Padding: 5% 5%;
+    display: flex;
+    font-style: normal;
+    font-size: 14px;
+    flex: 60%;
+    justify-content: space-between;
+}
+
+.list li {
+    padding: 0 10px;
+    flex-direction: column;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.switch {
+    padding: 5% 5%;
+    flex: 20%;
+}
