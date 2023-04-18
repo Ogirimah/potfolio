@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className={styles.container} id={theme}>
     <header className={styles.heading} id={theme}>
         <h1>
-        <a href='https://ogirimah.com'>Ameer</a>
+        <a href='https://ogirimah.com'>Ameer Ogirimah</a>
         </h1>
         <div className={styles.switch}>
             <label> {theme === 'dark' ? '🌙' : '☀️'}
