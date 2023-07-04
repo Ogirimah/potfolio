@@ -3,7 +3,7 @@ import './theme.css';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import Tictactoe from '.components/TicTacToe';
+import TicTacToe from './components/TicTacToe';
 import { createContext, useState } from 'react';
 
 
@@ -31,7 +31,7 @@ function App() {
             <Navbar />
             <Main />
             <Footer />
-            <Tictactoe />
+            <TicTacToe />
         </div>
     </div>
     </ThemeContext.Provider>
