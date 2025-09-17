@@ -1,28 +1,32 @@
 import React from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImportImages from "./ImportImages";
+import styles from "../styles/projects.module.css";
 
 const images = ImportImages(require.context('../images/svg', false, /\.(png|jpe?g|svg)$/));
 
-export default function IndividualProject({ ...props }) {
-  // This takes in an image, description, and link and returns a div with the image and description
-  //
-  // @image: The image to be displayed
-  // @heading: The heading of the project
-  // @description: The description of the activity
-  // @link1: The link to the live project
-  // @link2: The link to the GitHub source code
+export default function IndividualProject({ image, heading, description, link1, link2 }) {
   return (
-    <div>
-      <img src={props.image} alt="Current Focus" />
-        <h3>{props.heading}</h3>
-      <p>{props.description}</p>
-      <a href={props.link1}>
-          <img src={images['link.svg']} alt="Website hook" />
-      </a>
-       <a href={props.link2}>
-            <FontAwesomeIcon icon="fa-brands fa-github" />
-        </a>
+    <div className={styles.project}>
+      <img src={image} alt={heading} />
+      <div className={styles.projectContent}>
+        <h3>{heading}</h3>
+        <p>{description}</p>
+        <div className={styles.projectLinks}>
+          {link1 && (
+            <a href={link1} target="_blank" rel="noopener noreferrer">
+              <img src={images['link.svg']} alt="Website link" />
+              Live Demo
+            </a>
+          )}
+          {link2 && (
+            <a href={link2} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={["fab", "github"]} />
+              Source Code
+            </a>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

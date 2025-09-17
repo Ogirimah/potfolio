@@ -1,20 +1,17 @@
 import React from "react";
+import styles from "../styles/workExperience.module.css";
 
-export default function ExperienceCard({ company, position, descriptions }) {
-    // This takes in a company, position, and descriptions and returns a div with the company, position, and descriptions
-    //
-    // @company: The company name
-    // @position: The position held
-    // @descriptions: The descriptions of the position
+export default function ExperienceCard({ company, position, time, descriptions }) {
     return (
-        <div>
-        <h3>{company}</h3>
-        <h4>{position}</h4>
-        <ul>
-            {descriptions.map((description) => (
-            <li>{description}</li>
-            ))}
-        </ul>
+        <div className={styles.experience}>
+            <h3>{company}</h3>
+            <h4>{position}</h4>
+            {time && <p className={styles.time}>{time}</p>}
+            <ul>
+                {descriptions.map((description, index) => (
+                    <li key={index}>{description}</li>
+                ))}
+            </ul>
         </div>
     );
 }

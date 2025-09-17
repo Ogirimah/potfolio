@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { ThemeContext } from "../App.js"
+import styles from "../styles/tictactoe.module.css";
 
 // Functional component representing a single square on the Tic Tac Toe board
 function Square({ value, onSquareClick }) {
@@ -109,6 +111,7 @@ export default function Game() {
     const xIsNext = stepNumber % 2 === 0;
     // Get the current state of the squares from the history based on the current step number
     const currentSquares = history[stepNumber];
+    const { theme } = useContext(ThemeContext);
 
     // Function to handle a player making a move
     function handlePlay(nextSquares) {

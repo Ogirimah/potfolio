@@ -1,3 +1,41 @@
 .items {
+    display: flex;
     list-style: none;
+    gap: 1rem;
+    padding: 0;
+}
+
+.items li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-card-bg);
+    border-radius: 50%;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.items li:hover {
+    background-color: var(--color-accent);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Horizontal variant */
+.horizontal {
+    flex-direction: row;
+}
+
+/* Vertical variant */
+.vertical {
+    flex-direction: column;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .items {
+        justify-content: center;
+    }
 }
