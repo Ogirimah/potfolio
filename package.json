@@ -1,7 +1,7 @@
 {
   "name": "new",
   "version": "0.2.0",
-  "homepage": "https://ogirimah.github.io/potfolio",
+  "homepage": "https://github.com/ogirimah/potfolio",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
