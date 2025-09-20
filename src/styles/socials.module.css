@@ -3,6 +3,7 @@
     list-style: none;
     gap: 1rem;
     padding: 0;
+    flex-direction: column;
 }
 
 .items li {
@@ -34,8 +35,9 @@
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     .items {
         justify-content: center;
+        flex-direction: row;
     }
 }
