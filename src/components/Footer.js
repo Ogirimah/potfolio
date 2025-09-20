@@ -9,8 +9,8 @@ export default function Footer() {
       <div className={styles.content}>
         <div className={styles.contactInfo}>
           <ul>
-            <li>📱 +44 7379 328098</li>
-            <li>📧 ameerogirimah@gmail.com</li>
+            <li>📱 Phone: <a href={`tel:${"+44 7379 328098"}`}>{"+44 7379 328098"}</a></li>
+            <li>📧 Email: <a href={`mailto:${"enquiry@ogirimah.com"}`}>{"enquiry@ogirimah.com"}</a></li>
           </ul>
         </div>
         <Socials />
