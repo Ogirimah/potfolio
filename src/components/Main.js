@@ -2,11 +2,11 @@ import React from "react";
 import ImportImages from "./ImportImages";
 import About from "./About";
 import TechStack from "./TechStack";
-import Socials from "./Socials";
 import CurrentFocus from "./CurrentFocus";
 import Projects from "./Projects";
 import WorkExperience from "./WorkExperience";
 import styles from "../styles/main.module.css";
+
 
 const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
 
@@ -14,7 +14,6 @@ export default function Main() {
     return (
         <main className={styles.container}>
             <section className={styles.section} id="home">
-                <Socials />
                 <div className={styles.introContainer}>
                     <h3 className={styles.hi}>
                         Hi my name is Ameer Ogirimah

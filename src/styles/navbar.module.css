@@ -3,7 +3,7 @@
     top: 0;
     z-index: 100;
     background-color: var(--color-bg);
-    padding: 1rem 0;
+    padding: 4rem 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,22 +51,6 @@
     width: 100%;
 }
 
-.switch {
-    display: flex;
-    align-items: center;
-}
-
-.gameButton {
-    background-color: transparent;
-    border: 1px solid var(--color-accent);
-    color: var(--color-accent);
-}
-
-.gameButton:hover {
-    background-color: var(--color-accent);
-    color: white;
-}
-
 .mobileMenu {
     display: none;
     flex-direction: column;
@@ -101,23 +85,5 @@
 
     .mobileMenu {
         display: flex;
-    }
-
-    .heading {
-        position: relative;
-    }
-}
-
-@media (max-width: 480px) {
-    .heading {
-        gap: 1rem;
-    }
-
-    .switch {
-        order: 3;
-    }
-
-    .gameButton {
-        order: 2;
     }
 }

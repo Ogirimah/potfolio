@@ -3,8 +3,7 @@ import './theme.css';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import TicTacToe from './components/TicTacToe';
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -17,24 +16,33 @@ export const ThemeContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState('dark');
-  const [showTicTacToe, setShowTicTacToe] = useState(false);
 
-  const toggleTheme = () => {
-    setTheme((current) => (current === 'dark' ? 'light' : 'dark'));
-  };
+  // Detect system theme preference
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 
-  const toggleTicTacToe = () => {
-    setShowTicTacToe(!showTicTacToe);
-  };
+    // Set initial theme based on system preference
+    setTheme(mediaQuery.matches ? 'light' : 'dark');
+
+    // Listen for system theme changes
+    const handleChange = (e) => {
+      setTheme(e.matches ? 'light' : 'dark');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, toggleTicTacToe, showTicTacToe }}>
+    <ThemeContext.Provider value={{ theme }}>
       <div className="App" id={theme}>
         <div className="background">
           <Navbar />
           <Main />
           <Footer />
-          {showTicTacToe && <TicTacToe />}
         </div>
       </div>
     </ThemeContext.Provider>
