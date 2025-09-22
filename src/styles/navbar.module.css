@@ -1,10 +1,11 @@
+/* navbar.module.css */
 .container {
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: var(--color-bg);
-    padding: 4rem 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 4rem 2rem 2rem;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
 }
 
 .heading {
@@ -65,25 +66,55 @@
     transition: 0.3s;
 }
 
+/* Animation for hamburger menu when open */
+.mobileMenu span.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobileMenu span.open:nth-child(2) {
+    opacity: 0;
+}
+
+.mobileMenu span.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .list {
         display: none;
         position: absolute;
         top: 100%;
-        left: 0;
         right: 0;
         flex-direction: column;
         background-color: var(--color-bg);
-        padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 3rem;
+        box-shadow: 0 1px 2px var(--color-card-fg);
+        gap: 1rem;
     }
 
     .list.active {
         display: flex;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .list li {
+        padding: 0.5rem 0;
     }
 
     .mobileMenu {
         display: flex;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
