@@ -19,12 +19,14 @@ export default function Main() {
                         Hi my name is Ameer Ogirimah
                     </h3>
                     <h2 className={styles.softwareEngineer}>
-                        A software Engineer
+                        An AI-Software Engineer
                     </h2>
                     <p className={styles.brief}>
-                        I am a highly motivated person and I enjoy challenges on new
-                        and existing roles. I am confident on my
-                        flexibility in meeting up with the needs of any organization.
+                        I am a highly adaptable AI Software Engineer,
+                        proficient in transforming complex challenges into practical,
+                        high-value solutions. My expertise in Front-end development, Python, machine learning,
+                        and cloud platforms is complemented by a proven ability to rapidly
+                        integrate into new environments and deliver on key objectives for both projects and organisations.
                     </p>
                     <a href="/docs/Ameer-Ogirimah.pdf" target="_blank" rel="noopener noreferrer">
                         <button className={styles.button}>Download CV</button>
@@ -34,10 +36,12 @@ export default function Main() {
                     <div className={styles.imageWrapper}>
                         <img src={images['ameer.png']} alt="Ameer Ogirimah" />
                     </div>
-                    <div className={styles.imgSemiCircle}></div>
+                    {/* <div className={styles.imgSemiCircle}></div> */}
                     <div className={styles.imageCaption}>
                         <p>Let's Talk</p>
-                        <p>8 years + Experience</p>
+                    </div>
+                    <div className={styles.imageCaption2}>
+                        <p>8+ years of Experience</p>
                     </div>
                 </div>
             </section>
