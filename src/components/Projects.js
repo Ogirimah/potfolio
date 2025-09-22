@@ -3,7 +3,7 @@ import React from "react";
 import ImportImages from "./ImportImages";
 import IndividualProject from "./IndividualProject";
 
-const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+const images = ImportImages(require.context('../../public/images', false, /\.(png|jpe?g|svg)$/));
 
 export default function Projects() {
     // This function returns project cards with images, descriptions, and links
@@ -37,28 +37,28 @@ export default function Projects() {
                     description='A RESTfull API-built app for managing, brewing, and purchasing coffee. Powered by Flask, PostgreSQL, react, and AWS. It is built on a reliable structure for long-lasting function.'
                     link1=''
                     link2='https://github.com/Ogirimah/coffee-shop'
-                    />
+                />
                 <IndividualProject
                     image={images['ghana-food.jpg']}
                     heading='GHANA FOOD'
                     description='I was a member of a team that did a technical analysis and reporting of the comparison of the price of imported and locally produced rice. in Ghana between the years of 2008 to 2018, using R, Git, and Kanban board.'
                     link1=''
                     link2='https://github.com/Ogirimah/Ghana-food-prices'
-                    />
+                />
                 <IndividualProject
                     image={images['robot-controller.jpg']}
                     heading='ROBOT CONTROLLER'
                     description='Programmed a virtual robot vehicle to navigate a tract in Unity using C# autonomously  Used interaction between Raycast and road Layermask to autonomously navigate the track.'
                     link1=''
                     link2='https://github.com/Ogirimah/AI-Car-Simulation'
-                    />
+                />
                 <IndividualProject
                     image={images['portfolio.jpg']}
                     heading='PORTFOLIO'
                     description='This is my portfolio website. It is built with React, and is hosted on GitHub. It is built on a reliable structure for long-lasting function.'
                     link1=''
                     link2='https://github.com/Ogirimah/potfolio'
-                    />
+                />
             </div>
         </div>
     );

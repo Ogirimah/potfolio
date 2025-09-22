@@ -3,7 +3,7 @@ import ImportImages from "./ImportImages";
 import OneFocus from "./OneFocus";
 import styles from "../styles/currentFocus.module.css";
 
-const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+const images = ImportImages(require.context('../../public/images', false, /\.(png|jpe?g|svg)$/));
 export default function CurrentFocus() {
     // This function will return an image and a description of my current focus
     //

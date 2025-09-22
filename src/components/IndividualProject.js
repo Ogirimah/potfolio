@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ImportImages from "./ImportImages";
 import styles from "../styles/projects.module.css";
 
-const images = ImportImages(require.context('../images/svg', false, /\.(png|jpe?g|svg)$/));
+const images = ImportImages(require.context('../../public/images/svg', false, /\.(png|jpe?g|svg)$/));
 
 export default function IndividualProject({ image, heading, description, link1, link2 }) {
   return (

@@ -2,13 +2,13 @@ import React from "react";
 import ImportImages from "./ImportImages";
 import styles from "../styles/techStack.module.css";
 
-const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+const images = ImportImages(require.context('../../public/images/icons/', false, /\.(png|jpe?g|svg)$/));
 export default function TechStack() {
     // This function will return a list of tech-stack images
     return (
         <div>
             <h3>Tech Stack</h3>
-            <div className={ styles.container }>
+            <div className={styles.container}>
                 <a href="https://react.dev" rel="noreferrer noopener">
                     <img src={images['react.png']} alt="React" title="React" />
                 </a>
@@ -42,8 +42,8 @@ export default function TechStack() {
                 <a href="https://www.ubuntu.com" rel="noreferrer noopener">
                     <img src={images['ubuntu.png']} alt="Ubuntu" title="Ubuntu" />
                 </a>
-                <a href="https://www.vim.org" rel="noreferrer noopener">
-                    <img src={images['vim.png']} alt="Vim" title="Vim" />
+                <a href="https://www.langchain.com" rel="noreferrer noopener">
+                    <img src={images['langchain.png']} alt="LangChain" title="LangChain" />
                 </a>
                 <a href="https://www.tensorflow.org" rel="noreferrer noopener">
                     <img src={images['tensorflow.png']} alt="Tensorflow" title="Tensorflow" />

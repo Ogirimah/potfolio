@@ -8,7 +8,7 @@ import WorkExperience from "./WorkExperience";
 import styles from "../styles/main.module.css";
 
 
-const images = ImportImages(require.context('../images', false, /\.(png|jpe?g|svg)$/));
+const images = ImportImages(require.context('../../public/images', false, /\.(png|jpe?g|svg)$/));
 
 export default function Main() {
     return (
@@ -38,7 +38,7 @@ export default function Main() {
                     </div>
                     {/* <div className={styles.imgSemiCircle}></div> */}
                     <div className={styles.imageCaption}>
-                        <p>Let's Talk</p>
+                        <a href="#contact">Let's Talk</a>
                     </div>
                     <div className={styles.imageCaption2}>
                         <p>8+ years of Experience</p>
