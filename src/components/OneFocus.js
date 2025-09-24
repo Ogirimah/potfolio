@@ -8,8 +8,10 @@ export default function OneFocus({ image, description, link }) {
     // @description: The description of the activity
     // @link: The link to the activity
     return (
-        <div className={ styles.component }>
-            <img src={image} alt="Current Focus" />
+        <div className={styles.component}>
+            <div className={styles.imgContainer}>
+                <img src={image} alt="Current Focus" />
+            </div>
             <p>{description}</p>
             <a href={link}>Learn More</a>
         </div>

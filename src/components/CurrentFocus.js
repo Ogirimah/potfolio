@@ -16,12 +16,12 @@ export default function CurrentFocus() {
             <div className={styles.container}>
                 <OneFocus
                     image={images['AI.jpg']}
-                    description='Ai powered web solutions using Keras, TensorFlow, and ML.NET '
+                    description='AI powered web solutions using LangChain, TensorFlow, and LLMs'
                     link='#'
                 />
                 <OneFocus
                     image={images['responsive.jpg']}
-                    description='Building responsive and accessible web apps that meets WCAG 2.1 guidelines '
+                    description='Building responsive and accessible web apps that meets WCAG 2.1 guidelines'
                     link='#'
                 />
                 <OneFocus
