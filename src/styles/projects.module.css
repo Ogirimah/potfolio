@@ -1,3 +1,16 @@
+/* projects.module.css */
+.section {
+    padding: 4rem 0;
+}
+
+.heading {
+    color: var(--color-accent);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -11,10 +24,14 @@
     overflow: hidden;
     box-shadow: var(--box-shadow);
     transition: var(--transition);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project img {
@@ -25,21 +42,29 @@
 
 .projectContent {
     padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project h3 {
     color: var(--color-accent);
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .project p {
     margin-bottom: 1rem;
     line-height: 1.6;
+    color: var(--color-fg);
+    flex-grow: 1;
 }
 
 .projectLinks {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .projectLinks a {
@@ -47,19 +72,71 @@
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: var(--color-accent);
-    color: white;
+    /* background-color: var(--color-accent); */
+    color: var(--color-card-fg);
     border-radius: var(--border-radius);
     transition: var(--transition);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projectLinks img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .projectLinks a:hover {
     background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+}
+
+.projectLinks a:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.projectLinks a:disabled:hover {
+    transform: none;
+    background-color: #ccc;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
+    .section {
+        padding: 2rem 0;
+    }
+
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
     .container {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projectLinks {
+        flex-direction: column;
+    }
+
+    .projectLinks a {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .projectContent {
+        padding: 1rem;
     }
 }

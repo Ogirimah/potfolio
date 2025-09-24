@@ -18,6 +18,18 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    flex-direction: row;
+}
+
+.socialsContContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactInfo {
+    margin: 5rem 0;
 }
 
 .contactInfo ul {

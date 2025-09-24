@@ -16,7 +16,7 @@ export default function Main() {
             <section className={styles.section} id="home">
                 <div className={styles.introContainer}>
                     <h3 className={styles.hi}>
-                        Hi my name is Ameer Ogirimah
+                        Hi, my name is Ameer Ogirimah
                     </h3>
                     <h2 className={styles.softwareEngineer}>
                         An AI-Software Engineer

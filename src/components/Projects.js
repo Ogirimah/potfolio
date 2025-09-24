@@ -1,22 +1,15 @@
 import React from "react";
-
 import ImportImages from "./ImportImages";
 import IndividualProject from "./IndividualProject";
+import styles from "../styles/projects.module.css"; // Import the CSS module
 
 const images = ImportImages(require.context('../../public/images', false, /\.(png|jpe?g|svg)$/));
 
 export default function Projects() {
-    // This function returns project cards with images, descriptions, and links
-    //
-    // @image: The image to be displayed
-    // @heading: The heading of the project
-    // @description: The description of the activity
-    // @link1: GitHub link to the project
-    // @link2: Live link to the project
     return (
-        <div>
-            <h3>Projects</h3>
-            <div>
+        <div className={styles.section}> {/* Added container class */}
+            <h3 className={styles.heading}>Projects</h3> {/* Added heading class */}
+            <div className={styles.container}> {/* Added grid container class */}
                 <IndividualProject
                     image={images['iconator.jpg']}
                     heading='ICONATOR'

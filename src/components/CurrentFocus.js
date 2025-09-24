@@ -16,7 +16,7 @@ export default function CurrentFocus() {
             <div className={styles.container}>
                 <OneFocus
                     image={images['AI.jpg']}
-                    description='AI powered web solutions using LangChain, TensorFlow, and LLMs'
+                    description='AI powered web and native application solutions tailored to each individual use case'
                     link='#'
                 />
                 <OneFocus
@@ -26,7 +26,7 @@ export default function CurrentFocus() {
                 />
                 <OneFocus
                     image={images['open-source.jpg']}
-                    description='Contributing to open source and helping young developers understand and adopt modern programming methods'
+                    description='Contributing to open source and mentoring young developers'
                     link='#'
                 />
             </div>
