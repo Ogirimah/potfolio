@@ -1,10 +1,11 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
+import styles from "../styles/workExperience.module.css";
 
 export default function WorkExperience() {
     // This function returns cards of my work experience passed from the child component
     return (
-        <div>
+        <div className={styles.container}>
             <h3>My Work Experience</h3>
             <div>
                 <ExperienceCard
@@ -15,8 +16,8 @@ export default function WorkExperience() {
                         "I implemented a radio data system across all three stations platforms, thereby increasing engagement with listeners.",
                         "I was a crucial team member that designed and remodelled all the live studios.",
                         "I efficiently and timely installed and maintained broadcast equipment like transmitters,  audio processors, audio consoles, servers, and audio production workstations."
-                        ]}
-                    />
+                    ]}
+                />
                 <ExperienceCard
                     company="SEYAAM"
                     position="Technical Manager"
@@ -24,8 +25,8 @@ export default function WorkExperience() {
                     descriptions={[
                         "I was responsible for the design, implementation, and maintenance of the company’s IT infrastructure.",
                         "I developed and  implemented plans for the horticulture, aquaculture, and processing of products, to meet the business goals."
-                        ]}
-                    />
+                    ]}
+                />
             </div>
         </div>
     );

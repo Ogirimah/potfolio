@@ -30,6 +30,7 @@
     width: 15rem;
     border: 1px solid #2d3748;
     border-radius: 5px;
+    background-color: var(--color-card-bg);
 }
 
 .closeButton {
