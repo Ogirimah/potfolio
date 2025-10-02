@@ -2,7 +2,7 @@
     left: 0;
     top: 70px;
     /* Adjust based on your navbar height */
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .items {
@@ -69,5 +69,11 @@
 
     .items li:hover {
         transform: translateY(-3px);
+    }
+}
+
+@media (max-width: 480px) {
+    .items li {
+        margin: 0 2px;
     }
 }
