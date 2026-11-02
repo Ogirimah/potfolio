@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.173045e6.css",
-    "main.js": "/static/js/main.3d14fb0d.js",
+    "main.js": "/static/js/main.24524fcd.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/coffee-shop.jpg": "/static/media/coffee-shop.f4e325289206248fb845.jpg",
     "static/media/linux.png": "/static/media/linux.ec4ccbae660d9134cf1a.png",
@@ -31,6 +31,7 @@
     "static/media/tailwind.svg": "/static/media/tailwind.ea9f0f0abc115dca47aa.svg",
     "static/media/jinja - Copy.png": "/static/media/jinja - Copy.aa22a3235759d3f7ed31.png",
     "static/media/jinja.png": "/static/media/jinja.aa22a3235759d3f7ed31.png",
+    "static/media/ao_wordmark_logo.svg": "/static/media/ao_wordmark_logo.2dfeed06aa3a58a7bfdf.svg",
     "static/media/js.svg": "/static/media/js.a71f8dfbd955c56ad00a.svg",
     "static/media/django2.svg": "/static/media/django2.7311ab8b54061716245f.svg",
     "static/media/django.svg": "/static/media/django.f8002b7980d6728b4721.svg",
@@ -46,11 +47,11 @@
     "static/media/css3.svg": "/static/media/css3.e92b895d36bac96f4cb6.svg",
     "static/media/html5.svg": "/static/media/html5.d76b033432f42d4f6cb1.svg",
     "main.173045e6.css.map": "/static/css/main.173045e6.css.map",
-    "main.3d14fb0d.js.map": "/static/js/main.3d14fb0d.js.map",
+    "main.24524fcd.js.map": "/static/js/main.24524fcd.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.173045e6.css",
-    "static/js/main.3d14fb0d.js"
+    "static/js/main.24524fcd.js"
   ]
 }
