@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#04262f"/>
+      <stop offset="0.55" stop-color="#064a54"/>
+      <stop offset="1" stop-color="#075e68"/>
+    </linearGradient>
+    <linearGradient id="ecg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a5f3fc"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5eead4" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#99f6e4" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <rect width="600" height="400" fill="url(#dots)"/>
+  <circle cx="110" cy="100" r="150" fill="url(#glow1)"/>
+  <circle cx="500" cy="330" r="170" fill="url(#glow2)"/>
+
+  <!-- heartbeat panel -->
+  <rect x="58" y="92" width="484" height="150" rx="16" fill="#052f3a" stroke="#2dd4bf" stroke-opacity="0.35"/>
+  <path d="M84 172 H150 L176 120 L210 218 L238 172 H300 L322 146 L346 198 L372 172 H516"
+        fill="none" stroke="url(#ecg)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="346" cy="198" r="6" fill="#5eead4"/>
+  <circle cx="346" cy="198" r="13" fill="none" stroke="#5eead4" stroke-opacity="0.3"/>
+
+  <!-- cross badge -->
+  <g transform="translate(92 64)">
+    <circle r="26" fill="#064a54" stroke="#2dd4bf" stroke-opacity="0.6"/>
+    <path d="M-4-14H4V-4H14V4H4V14H-4V4H-14V-4H-4Z" fill="#5eead4"/>
+  </g>
+
+  <!-- patient cards -->
+  <g transform="translate(96 258)">
+    <rect width="140" height="86" rx="12" fill="#063d47" stroke="#2dd4bf" stroke-opacity="0.28"/>
+    <circle cx="28" cy="30" r="12" fill="#22d3ee" opacity="0.8"/>
+    <rect x="50" y="22" width="66" height="6" rx="3" fill="#a5f3fc" opacity="0.7"/>
+    <rect x="50" y="36" width="46" height="5" rx="2.5" fill="#a5f3fc" opacity="0.35"/>
+    <rect x="16" y="56" width="108" height="6" rx="3" fill="#5eead4" opacity="0.45"/>
+    <rect x="16" y="68" width="76" height="5" rx="2.5" fill="#5eead4" opacity="0.25"/>
+  </g>
+
+  <g transform="translate(364 258)">
+    <rect width="140" height="86" rx="12" fill="#063d47" stroke="#2dd4bf" stroke-opacity="0.28"/>
+    <rect x="16" y="18" width="108" height="8" rx="4" fill="#a5f3fc" opacity="0.55"/>
+    <rect x="16" y="34" width="72" height="5" rx="2.5" fill="#a5f3fc" opacity="0.3"/>
+    <g fill="#5eead4">
+      <circle cx="24" cy="62" r="7" opacity="0.85"/>
+      <circle cx="46" cy="62" r="7" opacity="0.55"/>
+      <circle cx="68" cy="62" r="7" opacity="0.3"/>
+      <circle cx="90" cy="62" r="7" opacity="0.15"/>
+    </g>
+  </g>
+
+  <!-- connector nodes -->
+  <g stroke="#2dd4bf" stroke-opacity="0.45" stroke-width="2" fill="none">
+    <path d="M236 300 C266 300 294 268 320 250"/>
+    <path d="M364 300 C334 300 306 268 280 250"/>
+  </g>
+  <circle cx="300" cy="244" r="7" fill="#22d3ee"/>
+
+  <text x="42" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#99f6e4" opacity="0.9" letter-spacing="3">PATIENT ONBOARDING &amp; TRIAGE</text>
+</svg>

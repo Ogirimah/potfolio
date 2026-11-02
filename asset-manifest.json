@@ -38,7 +38,10 @@
     "static/media/html5.svg": "/potfolio/new/static/media/html5.d76b033432f42d4f6cb1.svg",
     "main.21891207.css.map": "/potfolio/new/static/css/main.21891207.css.map",
     "main.5deb9062.js.map": "/potfolio/new/static/js/main.5deb9062.js.map",
-    "787.310b28fc.chunk.js.map": "/potfolio/new/static/js/787.310b28fc.chunk.js.map"
+    "787.310b28fc.chunk.js.map": "/potfolio/new/static/js/787.310b28fc.chunk.js.map",
+    "static/media/financial-engine.svg": "/potfolio/new/static/media/financial-engine.1d3ecbb2.svg",
+    "static/media/healthcare-platform.svg": "/potfolio/new/static/media/healthcare-platform.17a731e5.svg",
+    "static/media/agentic-rag.svg": "/potfolio/new/static/media/agentic-rag.15aac5da.svg"
   },
   "entrypoints": [
     "static/css/main.21891207.css",
