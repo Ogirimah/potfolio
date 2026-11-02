@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.32981b24.css",
-    "main.js": "/static/js/main.e09ffc5c.js",
+    "main.css": "/static/css/main.173045e6.css",
+    "main.js": "/static/js/main.dd8c0b4c.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/coffee-shop.jpg": "/static/media/coffee-shop.f4e325289206248fb845.jpg",
     "static/media/linux.png": "/static/media/linux.ec4ccbae660d9134cf1a.png",
@@ -37,17 +37,20 @@
     "static/media/jsx.svg": "/static/media/jsx.84c8f6d7e2b03bad465f.svg",
     "static/media/next.svg": "/static/media/next.8ce6a5126cebc5da27ef.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.012d7fb71c6bfcaecdc5.svg",
+    "static/media/financial-engine.svg": "/static/media/financial-engine.8b1457b92fee08190721.svg",
+    "static/media/agentic-rag.svg": "/static/media/agentic-rag.49ee961873e005616f02.svg",
     "static/media/all-auth.svg": "/static/media/all-auth.cbacdae4c5d3ac3c150e.svg",
+    "static/media/healthcare-platform.svg": "/static/media/healthcare-platform.a12a05a2f999e010dbb9.svg",
     "index.html": "/index.html",
     "static/media/link.svg": "/static/media/link.a738f1ad1ef41626e9fd.svg",
     "static/media/css3.svg": "/static/media/css3.e92b895d36bac96f4cb6.svg",
     "static/media/html5.svg": "/static/media/html5.d76b033432f42d4f6cb1.svg",
-    "main.32981b24.css.map": "/static/css/main.32981b24.css.map",
-    "main.e09ffc5c.js.map": "/static/js/main.e09ffc5c.js.map",
+    "main.173045e6.css.map": "/static/css/main.173045e6.css.map",
+    "main.dd8c0b4c.js.map": "/static/js/main.dd8c0b4c.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32981b24.css",
-    "static/js/main.e09ffc5c.js"
+    "static/css/main.173045e6.css",
+    "static/js/main.dd8c0b4c.js"
   ]
 }

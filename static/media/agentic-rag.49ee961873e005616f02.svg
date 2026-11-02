@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#140c2e"/>
+      <stop offset="0.55" stop-color="#24124d"/>
+      <stop offset="1" stop-color="#2b1a63"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#c4b5fd" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <rect width="600" height="400" fill="url(#grid)"/>
+  <circle cx="140" cy="120" r="170" fill="url(#glow1)"/>
+  <circle cx="480" cy="310" r="160" fill="url(#glow2)"/>
+
+  <!-- network edges -->
+  <g stroke="url(#edge)" stroke-opacity="0.55" stroke-width="2" fill="none">
+    <path d="M150 130 L260 96 L372 148 L462 106"/>
+    <path d="M150 130 L206 224 L322 260 L432 220 L462 106"/>
+    <path d="M260 96 L322 260"/>
+    <path d="M372 148 L432 220"/>
+    <path d="M206 224 L150 130"/>
+    <path d="M260 96 L206 224"/>
+  </g>
+
+  <!-- nodes -->
+  <g>
+    <circle cx="150" cy="130" r="18" fill="#24124d" stroke="#c4b5fd" stroke-opacity="0.7" stroke-width="2"/>
+    <circle cx="260" cy="96" r="14" fill="#2b1a63" stroke="#a78bfa" stroke-opacity="0.8" stroke-width="2"/>
+    <circle cx="372" cy="148" r="22" fill="#1e1150" stroke="#22d3ee" stroke-opacity="0.7" stroke-width="2"/>
+    <circle cx="462" cy="106" r="12" fill="#2b1a63" stroke="#c4b5fd" stroke-opacity="0.7" stroke-width="2"/>
+    <circle cx="206" cy="224" r="15" fill="#24124d" stroke="#a78bfa" stroke-opacity="0.7" stroke-width="2"/>
+    <circle cx="322" cy="260" r="26" fill="#1e1150" stroke="#22d3ee" stroke-opacity="0.8" stroke-width="2.5"/>
+    <circle cx="432" cy="220" r="17" fill="#24124d" stroke="#c4b5fd" stroke-opacity="0.7" stroke-width="2"/>
+  </g>
+
+  <!-- database -->
+  <g transform="translate(486 250)">
+    <ellipse cx="0" cy="-36" rx="46" ry="14" fill="#31246b" stroke="#22d3ee" stroke-opacity="0.6"/>
+    <path d="M-46-36 V32 C-46 40-25 46 0 46 C25 46 46 40 46 32 V-36" fill="#24124d" stroke="#22d3ee" stroke-opacity="0.6"/>
+    <path d="M-46 0 C-46 8-25 14 0 14 C25 14 46 8 46 0" fill="none" stroke="#22d3ee" stroke-opacity="0.3"/>
+    <path d="M-46 18 C-46 26-25 32 0 32 C25 32 46 26 46 18" fill="none" stroke="#22d3ee" stroke-opacity="0.3"/>
+    <circle cx="0" cy="-36" r="6" fill="#22d3ee"/>
+  </g>
+
+  <!-- document stack -->
+  <g transform="translate(76 276) rotate(-6)">
+    <rect x="0" y="18" width="86" height="58" rx="8" fill="#1e1150" stroke="#a78bfa" stroke-opacity="0.35"/>
+    <rect x="6" y="9" width="86" height="58" rx="8" fill="#24124d" stroke="#a78bfa" stroke-opacity="0.45"/>
+    <rect x="12" y="0" width="86" height="58" rx="8" fill="#2b1a63" stroke="#c4b5fd" stroke-opacity="0.55"/>
+    <rect x="24" y="14" width="44" height="6" rx="3" fill="#c4b5fd" opacity="0.6"/>
+    <rect x="24" y="26" width="60" height="4" rx="2" fill="#c4b5fd" opacity="0.3"/>
+    <rect x="24" y="36" width="52" height="4" rx="2" fill="#c4b5fd" opacity="0.25"/>
+  </g>
+
+  <text x="42" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" fill="#c4b5fd" opacity="0.9" letter-spacing="3">AGENTIC RAG CONTEXT LAYER</text>
+</svg>
