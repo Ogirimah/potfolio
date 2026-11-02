@@ -41,7 +41,7 @@ export default function Main() {
                         <a href="#contact">Let's Talk</a>
                     </div>
                     <div className={styles.imageCaption2}>
-                        <p>8+ years of Experience</p>
+                        <p>10+ years of Experience</p>
                     </div>
                 </div>
             </section>

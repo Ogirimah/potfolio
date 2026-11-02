@@ -4,6 +4,7 @@
     --color-fg: var(--color-fg-dark);
     --color-card-bg: #1a1a1a;
     --color-card-fg: #ffffff;
+    --color-border: #333333;
 }
 
 #light {
@@ -11,6 +12,7 @@
     --color-fg: var(--color-fg-light);
     --color-card-bg: #ffffff;
     --color-card-fg: #333333;
+    --color-border: #e0e0e0;
 }
 
 /* Card styles for both themes */

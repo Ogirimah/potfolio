@@ -11,13 +11,12 @@ export default function Socials({ ...props }) {
   return (
     <div className={styles.socialsContainer} {...props}>
       <ul className={styles.items}>
-        <li><a href="#"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon="fa-brands fa-github" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon="fa-regular fa-envelope" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon="fa-brands fa-codepen" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon="fa-brands fa-twitter" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a></li>
-        <li><a href="#"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a></li>
+        <li><a href="https:www.linkedin.com/in/ogirimah"><FontAwesomeIcon icon="fa-brands fa-linkedin" /></a></li>
+        <li><a href="https:www.github.com/ogirimah"><FontAwesomeIcon icon="fa-brands fa-github" /></a></li>
+        <li><a href={`mailto:${"enquiry@ogirimah.com"}`}><FontAwesomeIcon icon="fa-regular fa-envelope" /></a></li>
+        <li><a href="https:www.x.com/ameerogirimah"><FontAwesomeIcon icon="fa-brands fa-twitter" /></a></li>
+        <li><a href="https:www.facebook.com/ameerogirimah"><FontAwesomeIcon icon="fa-brands fa-facebook" /></a></li>
+        <li><a href="https:www.instagram.com/ogirimah"><FontAwesomeIcon icon="fa-brands fa-instagram" /></a></li>
       </ul>
     </div>
   )

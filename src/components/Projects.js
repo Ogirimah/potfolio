@@ -11,6 +11,27 @@ export default function Projects() {
             <h3 className={styles.heading}>Projects</h3> {/* Added heading class */}
             <div className={styles.container}> {/* Added grid container class */}
                 <IndividualProject
+                    image={images['financial-engine.svg']}
+                    heading='AI FINANCIAL DECISION ENGINE'
+                    description='An automated financial record evaluation and decision-support engine built with multi-agent LLM workflows (LangGraph, FastAPI) and asynchronous document parsing. It reduced end-to-end processing time from 4 days to 120 minutes and cut manual review costs by 70%.'
+                    link1=''
+                    link2=''
+                />
+                <IndividualProject
+                    image={images['healthcare-platform.svg']}
+                    heading='HEALTHCARE ONBOARDING PLATFORM'
+                    description='An event-driven patient onboarding, automated triage, and multi-channel follow-up platform for a home healthcare clinic, built with Python, React, and PostgreSQL. It reduced administrative onboarding time by 65% and improved patient follow-up adherence by 48%.'
+                    link1=''
+                    link2=''
+                />
+                <IndividualProject
+                    image={images['agentic-rag.svg']}
+                    heading='AGENTIC RAG CONTEXT LAYER'
+                    description='Custom MCP servers and a scalable Agentic RAG context-management layer using pgvector and semantic caching, lowering LLM token consumption by 50%, reducing P95 query latency by 42%, and cutting hallucination rates to under 2%.'
+                    link1=''
+                    link2=''
+                />
+                <IndividualProject
                     image={images['iconator.jpg']}
                     heading='ICONATOR'
                     description='We developed a favicon generator. AllAuth was use for authentication, and Cloudinary for processing and storing image data, ninja. We took advantage of Django model classes and function - based view to power the backend.'
@@ -44,13 +65,6 @@ export default function Projects() {
                     description='Programmed a virtual robot vehicle to navigate a tract in Unity using C# autonomously  Used interaction between Raycast and road Layermask to autonomously navigate the track.'
                     link1=''
                     link2='https://github.com/Ogirimah/AI-Car-Simulation'
-                />
-                <IndividualProject
-                    image={images['portfolio.jpg']}
-                    heading='PORTFOLIO'
-                    description='This is my portfolio website. It is built with React, and is hosted on GitHub. It is built on a reliable structure for long-lasting function.'
-                    link1=''
-                    link2='https://github.com/Ogirimah/potfolio'
                 />
             </div>
         </div>
